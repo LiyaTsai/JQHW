@@ -21,10 +21,11 @@ $ballpadding: 10px
 .title
     text-align: center
     font-size: 2.5rem
+    margin-bottom: 1rem
 
 .main
     padding: 2rem
-    width: 70%
+    width: 67%
     margin: 2rem auto
     background-color: $color1
 
@@ -34,10 +35,10 @@ $ballpadding: 10px
 
 .lotteryNums
     overflow: hidden
-    width: 66%
-    border: 3px solid black
+    width: 350px
+    // border: 3px solid black
     margin: 0 auto
-    padding: 0 calc( 0.5*(70% - (10*$ballSize + 9*$ballpadding)))
+    //padding: 0 calc( 0.5*(70% - (10*$ballSize + 9*$ballpadding)))
     & > div
         display: block
         float: left
@@ -61,13 +62,15 @@ $ballpadding: 10px
         color: $color1
         &.highlight
             background-color: $colorp1
-            color: #333
+            color: $color7
     .highlight
         background-color: $colorp2
-        color: #fff
+        color: $color7
 
 .t2
     margin: 1rem 0
+    border: 3px solid black
+    text-align: center
 
 .btn
     background-color: $color3
