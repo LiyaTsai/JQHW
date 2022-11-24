@@ -1,0 +1,74 @@
+//色票
+$color1: #FFDCBC
+$color2: #FFC592
+$color3: #F5AB60
+$color4: #D68741
+$color5: #B2652F
+$color6: #AD611E
+$color7: #743701
+$colorp1: #FFDC67
+$colorp2: #FF998E
+$ballSize: 20px
+$ballpadding: 10px
+
+*
+    margin: 0
+    padding: 0
+
+.title,.t1,.t2
+    color: $color6
+
+.title
+    text-align: center
+    font-size: 2.5rem
+
+.main
+    padding: 2rem
+    width: 70%
+    margin: 2rem auto
+    background-color: $color1
+
+.t1
+    font-size: 1.2rem
+    margin: 1rem 0
+
+.lotteryNums
+    overflow: hidden
+    width: 66%
+    border: 3px solid black
+    margin: 0 auto
+    padding: 0 calc( 0.5*(70% - (10*$ballSize + 9*$ballpadding)))
+    & > div
+        display: block
+        float: left
+        width: $ballSize
+        height: $ballSize
+        // border: 1px solid #999
+        border-radius: 50%
+        background-color: $color4
+        color: $color1
+        font-size: 20px
+        padding: $ballpadding
+        text-align: center
+        line-height: 25px
+        margin-right: 10px
+        margin-bottom: 10px
+    &>div:hover
+        cursor: pointer
+        background-color: $color6
+    .selected
+        background-color: $color6
+        color: $color1
+        &.highlight
+            background-color: $colorp1
+            color: #333
+    .highlight
+        background-color: $colorp2
+        color: #fff
+
+.t2
+    margin: 1rem 0
+
+.btn
+    background-color: $color3
+    border: 2px solid $color4
