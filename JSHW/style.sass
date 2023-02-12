@@ -1,0 +1,120 @@
+$color1: #F5AB60
+$color2: #FFDCBC
+$color3: #FFC592
+$color4: #D68741
+$color5: #B2652F
+
+*
+    padding: 0px
+    margin: 0
+
+.mainBox
+    width: 90%
+    margin: 2rem auto
+    padding: 1rem
+    //border: 5px solid $color4
+    border-radius: 0.5rem
+    box-shadow: 10px 10px 15px 0px $color5
+    // background-image: url("")
+    background-color: $color2
+
+    .title
+        text-align: center
+        font-size: 2.5rem
+        margin: 0 1rem
+        //text-shadow: 15px 10px 20px $color4
+
+    .title, .player, .result , .ansNum, #ansNum, .ab
+        color: $color5
+
+    // .c1
+    //     width: 7rem
+    //     margin: 0 auto
+        // text-align: center
+        // transform: translateX(-50%)
+        // clear: both
+
+    .player
+        // font-size: 1.2rem
+        margin-left: 10%
+
+    .num
+        outline: $color4
+
+    .btn
+        padding: 0.2rem 0.7rem
+        font-size: 1.05rem
+        font-family: '微軟正黑體'
+        background-color: $color3
+        border: none
+        border-radius: 0.5rem
+        color: $color5
+        &:hover
+            background-color: $color5
+            color: $color2
+            font-size: 1rem
+            border-radius: 1.5rem
+
+    .reload
+        float: right
+        // &:hover
+        //     transform: scale(1.2,1.2)
+
+    .guessNum
+        //border: 5px solid #000
+        width: 60%
+        margin: 1rem auto 0 auto
+        display: flex
+        justify-content: space-between
+
+    .num,.ab
+        text-align: center
+        background-color: $color4
+        color: $color2
+        border: 1px solid $color1
+        border-radius: 2rem
+
+    .num
+        width: 4rem
+        line-height: 4rem
+        font-size: 1.5rem
+        background-color: $color4
+        color: $color2
+        border: 1px solid $color1
+        border-radius: 2rem
+
+    .chk
+        margin: 0.7rem 50% 2rem 50%
+        width: 10rem
+        transform: translateX(-50%)
+        &:hover
+            transform: translateX(-50%)
+
+    .result
+        border: 1px solid $color3
+        border-radius: 3rem
+        box-shadow: 5px 5px 10px 0px $color1
+        text-align: center
+        line-height: 1.7rem
+        width: 50%
+        margin: 0 auto
+
+    .foot
+        display: flex
+        .answer
+            margin: 0.5rem 0 2rem 20%
+            width: 9rem
+        .aNum
+            // width: 30rem
+            // border: 2px solid $color5
+            height: 2rem
+            text-align: center
+            display: flex
+            .ab
+                justify-content: center
+                align-items: center
+                line-height: 1.5rem
+                height: 1.5rem
+                width: 1.5rem
+                font-size: 1rem
+                margin: 0.5rem

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>猜數字遊戲</title>
+        <link rel="shortcut icon" href="./icon.png" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="mainBox">
+            <h1 class="title">猜數字遊戲</h1>
+            <button class="btn reload" onclick="reload()">重啟遊戲</button>
+            <div class="c1" style="clear: both">
+                <label for="number" class="player">玩家猜的數字</label>
+            </div>
+            <div class="guessNum">
+                <input
+                    type="text"
+                    class="num"
+                    name="number1"
+                    id="userNum1"
+                    min="0"
+                    max="9"
+                    maxlength="1"
+                    onKeyUp="next(this)"
+                />
+                <input
+                    type="text"
+                    class="num"
+                    name="number2"
+                    id="userNum2"
+                    min="0"
+                    max="9"
+                    maxlength="1"
+                    onKeyUp="next(this)"
+                />
+                <input
+                    type="text"
+                    class="num"
+                    name="number3"
+                    id="userNum3"
+                    min="0"
+                    max="9"
+                    maxlength="1"
+                    onKeyUp="next(this)"
+                />
+                <input
+                    type="text"
+                    class="num"
+                    name="number4"
+                    id="userNum4"
+                    min="0"
+                    max="9"
+                    maxlength="1"
+                    onKeyUp="next(this)"
+                />
+                <input
+                    type="text"
+                    class="num"
+                    name="number5"
+                    id="userNum5"
+                    min="0"
+                    max="9"
+                    maxlength="1"
+                    onKeyUp="next(this)"
+                />
+            </div>
+            <button class="btn chk" onclick="getUserNum()">檢視猜測結果</button>
+            <div class="result">
+                <p id="userNum">你猜測的結果：</p>
+                <p id="bingoNum">猜中的數字有</p>
+            </div>
+            <br /><br />
+            <div class="foot">
+                <button class="btn answer" id="Hide" onclick="show()">顯示莊家的數字</button>
+                <div class="aNum" id="DealerNum">
+                    <div class="ab" id="ab1"></div>
+                    <div class="ab" id="ab2"></div>
+                    <div class="ab" id="ab3"></div>
+                    <div class="ab" id="ab4"></div>
+                    <div class="ab" id="ab5"></div>
+
+                    <!-- <span for="" class="ab" id="ab1"></sapn>
+                    <span for="" class="ab" id="ab2"></span>
+                    <span for="" class="ab" id="ab3"></span>
+                    <span for="" class="ab" id="ab4"></span>
+                    <span for="" class="ab" id="ab5"></span> -->
+                </div>
+            </div>
+        </div>
+        <script src="./JSver2.js"></script>
+    </body>
+</html>

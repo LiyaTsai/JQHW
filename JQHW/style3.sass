@@ -1,0 +1,95 @@
+//色票
+$color1: #FFDCBC
+$color2: #FFC592
+$color3: #F5AB60
+$color4: #D68741
+$color5: #B2652F
+$color6: #AD611E
+$color7: #743701
+$colorp1: #FFDC67
+$colorp2: #FF998E
+$ballSize: 1.8rem
+$ballpadding: 0.3rem
+
+*
+    margin: 0
+    padding: 0
+
+.title,.t1,.t2,.record
+    color: $color6
+
+.title
+    text-align: center
+    font-size: 2.5rem
+    margin-bottom: 1rem
+
+.main
+    padding: 2rem
+    width: 67%
+    margin: 2rem auto
+    background-color: $color1
+    border-radius: 2rem
+
+.t1
+    font-size: 1.2rem
+    margin: 1rem 0
+
+.lotteryNums
+    overflow: hidden
+    width: 358px
+    // border: 3px solid black
+    margin: 0 auto
+    //padding: 0 calc( 0.5*(70% - (10*$ballSize + 9*$ballpadding)))
+    & > div
+        display: block
+        float: left
+        width: $ballSize
+        height: $ballSize
+        border: 1px solid $color4
+        border-radius: 50%
+        background-color: $color4
+        color: $color1
+        font-size: 1.2rem
+        padding: $ballpadding
+        text-align: center
+        line-height: 25px
+        margin-right: 10px
+        margin-bottom: 10px
+    &>div:hover
+        cursor: pointer
+        background-color: $color6
+    .selected
+        background-color: $color6
+        color: $color1
+        &.highlight
+            background-color: $colorp1
+            color: $color6
+    .highlight
+        background-color: $colorp2
+        color: $color6
+
+.lotteryResult
+    margin: 1rem 0
+
+.t2,.record
+    // border: 3px solid black
+    // text-align: center
+    font-size: 1.2rem
+
+.btn
+    background-color: $color3
+    color: $color7
+    font-size: 1.2rem
+    border: 2px solid $color4
+    border-radius: 1rem
+    padding: 0.3rem 1rem
+    margin: 0 0.5rem
+    &:hover
+        color: $color2
+        background-color: $color6
+        cursor: pointer
+
+hr
+    border-top: 2px dotted $color5
+    margin: 1rem 0
+    width: 100%

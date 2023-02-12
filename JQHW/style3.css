@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title, .t1, .t2, .record {
+  color: #AD611E;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.main {
+  padding: 2rem;
+  width: 67%;
+  margin: 2rem auto;
+  background-color: #FFDCBC;
+  border-radius: 2rem;
+}
+
+.t1 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.lotteryNums {
+  overflow: hidden;
+  width: 358px;
+  margin: 0 auto;
+}
+.lotteryNums > div {
+  display: block;
+  float: left;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #D68741;
+  border-radius: 50%;
+  background-color: #D68741;
+  color: #FFDCBC;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.lotteryNums > div:hover {
+  cursor: pointer;
+  background-color: #AD611E;
+}
+.lotteryNums .selected {
+  background-color: #AD611E;
+  color: #FFDCBC;
+}
+.lotteryNums .selected.highlight {
+  background-color: #FFDC67;
+  color: #AD611E;
+}
+.lotteryNums .highlight {
+  background-color: #FF998E;
+  color: #AD611E;
+}
+
+.lotteryResult {
+  margin: 1rem 0;
+}
+
+.t2, .record {
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: #F5AB60;
+  color: #743701;
+  font-size: 1.2rem;
+  border: 2px solid #D68741;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  margin: 0 0.5rem;
+}
+.btn:hover {
+  color: #FFC592;
+  background-color: #AD611E;
+  cursor: pointer;
+}
+
+hr {
+  border-top: 2px dotted #B2652F;
+  margin: 1rem 0;
+  width: 100%;
+}/*# sourceMappingURL=style3.css.map */
